@@ -1,5 +1,5 @@
-@main-color: #4f9e34;
-@dark: #373737;
+@main-color: #165c03;
+@dark: #136bad;
 
 .fade {
   animation-name: fade;
@@ -241,7 +241,7 @@ header {
 			padding-left: 40px;
 			&-title {
 				margin-top: 30px;
-				color: @main-color;
+				color:#000;
 				font-size: 36px;
 				font-weight: 300;
 				&:after {
@@ -249,7 +249,7 @@ header {
 					display: block;
 					width: 20%;
 					height: 1px;
-					background-color: @main-color;
+					background-color: #000;
 					margin-top: 4px;
 				}			
 			}
@@ -262,16 +262,19 @@ header {
 					margin-top: 30px;
 					background-color: transparent;
 					border: none;
-					border-bottom: 1px solid #fff;
-					color: #fff;
+					color:#fff;
+					border-bottom: 1px solid #000;
+						&::placeholder{
+							color:#fff;
+						}
 				}
 				button {
 					margin-top: 60px;
 					width: 150px;
 					height: 40px;
-					background-color: transparent;
-					border: 1px solid @main-color;
-					color: @main-color;
+					background-color: #fff;
+					border: 1px solid #000;
+					color: #000;
 					cursor: pointer;
 					&:hover{
 						box-shadow: 0 0 10px @main-color;
