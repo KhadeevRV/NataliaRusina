@@ -1,5 +1,5 @@
-@main-color: #165c03;
-@dark: #7ca8d6;
+@main-color: #3b6b3a;
+@dark: #a6dedb;
 
 .fade {
   animation-name: fade;
@@ -40,7 +40,7 @@ header {
 	height:60px;
 	position: absolute;
 	top:0;
-	background-color: rgba(0,0,0,.4);
+	background-color: rgba(0,0,0,.7);
 	z-index: 10;
 	ul {
 		height: 60px;
@@ -50,7 +50,17 @@ header {
 		align-items: center;
 		color: #fff;
 		li{
-			margin-left: 50px;
+			&:nth-child(n+4){
+				margin-left: 50px;
+			}
+			.nav-logo{
+				margin-left: 10px;
+			}
+			img{
+				width: 30px;
+				height: 30px;
+				margin-top: 10px;
+			}
 			&:after {
 				content: '';
 				display: block;
@@ -122,7 +132,7 @@ header {
 .content {
 	width: 100%;
 	height:100%;
-	background: linear-gradient(to top, #fff 15%,#c7ebff 95%, #6c9d23);;
+	background: linear-gradient(to top, #fff 15%,#c7ebff 97%, #98f062);;
 	background-position: 50% 30%;
 	.info {
 		width: 100%;
@@ -164,7 +174,7 @@ header {
 			.description{
 				&-text {
 					margin-top: 30px;
-					color: #fff;
+					color: #000;
 					font-weight: 300;
 					padding-right: 20px;
 					font-size: 21px;
@@ -207,6 +217,7 @@ header {
 			color: #000;
 			font-weight: 300;
 			font-size: 18px;
+			text-indent: 3em;
 		}
 		&-img{
 			margin-right: 50px;
@@ -259,10 +270,10 @@ header {
 					margin-top: 30px;
 					background-color: transparent;
 					border: none;
-					color:#fff;
+					color:#000;
 					border-bottom: 1px solid #000;
 						&::placeholder{
-							color:#fff;
+							color:#000;
 						}
 				}
 				button {
