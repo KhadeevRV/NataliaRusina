@@ -33,4 +33,18 @@ window.addEventListener('DOMContentLoaded', function() {
             }    
         }
     });
+
+    //Form 
+
+    let form = document.querySelector('.form');
+
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        let request = new XMLHttpRequest();
+        request.open('POST', 'mail.php')
+        request.setRequestHeader('Content-Type', 'application/json; charset=utf-8');;
+        alert('Ваша форма была отправлена')
+    });
 });
