@@ -1,5 +1,5 @@
 <?php
-$to = "khadeevrv@gmail.com"; // емайл получателя данных из формы
+$to = "dompofengshui@mail.ru"; // емайл получателя данных из формы
 $tema = "Форма обратной связи сайта"; // тема полученного емайла
 $message .= "E-mail: ".$_POST['email']."<br>"; //полученное из формы name=email
 $message .= "Номер телефона: ".$_POST['phone']."<br>"; //полученное из формы name=phone
